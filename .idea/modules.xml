@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hash_examples/hash_examples.iml" filepath="$PROJECT_DIR$/hash_examples/hash_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao_examples/kakao_examples.iml" filepath="$PROJECT_DIR$/kakao_examples/kakao_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/programmers_example.iml" filepath="$PROJECT_DIR$/.idea/programmers_example.iml" />
     </modules>
