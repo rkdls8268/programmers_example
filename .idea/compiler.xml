@@ -2,7 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="hash_examples" target="14" />
+      <module name="hash_examples.main" target="14" />
+      <module name="hash_examples.test" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>
