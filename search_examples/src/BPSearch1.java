@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class BPSearch1 {
     // Brute-Force Search: 완전 탐색
@@ -35,32 +33,40 @@ public class BPSearch1 {
             }
         }
 
-        int realCount = 1;
+//        int realCount = 1;
         int max = 0;
         int current = 0;
+        List<Integer> list = new ArrayList<>();
+
         for (int i = 0; i < count.length; i++) {
             current = count[i];
             if (i == 0) {
+//                System.out.println("current: "+current);
                 max = count[i];
-                answer = new int[1];
-                answer[0] = i+1;
+                list.add(i + 1);
+//                System.out.println("1 list: "+list);
             } else {
                 if (current > max) {
-                    realCount = 1;
+//                    System.out.println("current: "+current);
+//                    realCount = 1;
                     max = current;
-                    answer = new int[1];
-                    answer[0] = i+1;
-//                    System.out.println(Arrays.toString(answer));
+//                    System.out.println("before 2 list: "+list);
+
+                    list.clear();
+                    list.add(i + 1);
+//                    System.out.println("after 2 list: "+list);
+
                 } else if (current == max) {
-                    realCount++;
-                    answer = new int[realCount];
-                    for (int j = 0; j < realCount; j++) {
-                        // TODO: [2, 3] 나오게 처리..!!!
-                        answer[j] = j+1;
-                    }
-//                    System.out.println(Arrays.toString(answer));
+//                    System.out.println("current(=max): "+current);
+//                    realCount++;
+                    list.add(i+1);
+//                    System.out.println("3 list: "+list);
                 }
             }
+        }
+        answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
         }
 
         return answer;
