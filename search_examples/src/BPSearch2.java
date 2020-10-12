@@ -2,7 +2,7 @@ import java.util.*;
 
 public class BPSearch2 {
     public static void main(String[] args) {
-        String numbers = "011";
+        String numbers = "189";
         System.out.println(solution(numbers));
     }
 
@@ -72,7 +72,7 @@ public class BPSearch2 {
     }
 
     static void primeNum(Set set, StringBuilder s) {
-//        System.out.println("set: "+set+ "s: "+s);
+        System.out.println("set: "+set+ "s: "+s);
 
         int num = Integer.parseInt(String.valueOf(s));
         boolean isPrime = true;
@@ -80,7 +80,7 @@ public class BPSearch2 {
         if (num <= 1) {
             return;
         }
-        for (int i = 2; i < Math.sqrt(num); i++) {
+        for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 isPrime = false;
                 break;
