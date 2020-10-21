@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/nhn_examples/NHN_examples.iml" filepath="$PROJECT_DIR$/nhn_examples/NHN_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/coupang_examples/coupang_examples.iml" filepath="$PROJECT_DIR$/coupang_examples/coupang_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/dev_matching_examples/dev_matching_examples.iml" filepath="$PROJECT_DIR$/dev_matching_examples/dev_matching_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/dfs_bfs_examples/dfs_bfs_examples.iml" filepath="$PROJECT_DIR$/dfs_bfs_examples/dfs_bfs_examples.iml" />
