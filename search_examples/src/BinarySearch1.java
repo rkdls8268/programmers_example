@@ -17,19 +17,29 @@ public class BinarySearch1 {
         long right = 0;
         long mid;
 
+        // 각각의 심사대에서 걸리는 시간(times[i]) 계산해서 right 보다 크면 t에 대입
         for (int t : times) {
             if (t > right)
                 right = t;
+            System.out.println(right);
         }
 
+        // 입국심사 기다리는 사람 수 n
+        System.out.println(n);
+        // right 이 탐색해야 될 수 중 가장 큰 수이므로 (가장 긴 시간 * 기다리는 사람)을 일단 최대로 잡아 둠
         right *= n;
+
+        System.out.println("left: "+left+", right: "+right);
 
         // 이진 탐색
         while (left <= right) {
             long done = 0;
+            // 중간 수
             mid = (left + right) / 2;
+            System.out.println("mid: "+ mid);
             for (int time : times) {
                 done += mid / time;
+                System.out.println("time: "+time+", done:" +done);
             }
 
             if (done < n) {
@@ -40,24 +50,13 @@ public class BinarySearch1 {
                 if (mid < answer) {
                     // 가장 타이트한 시간을 찾아야 하므로
                     answer = mid;
+                    System.out.println("answer:" +answer);
                 }
+                System.out.println("mid>=answer done: "+done);
                 right = mid - 1;
             }
         }
 
         return answer;
-    }
-
-    static int binarySearch(int[] times, int n) {
-        long low = 0;
-        long high = times[times.length-1] * n; // 2*10 이런 식으로
-        long mid = 0;
-        long ans = Long.MAX_VALUE;
-
-        while (low <= high) {
-            mid = (high + low) / 2;
-//            if (times[])
-        }
-        return 0;
     }
 }
