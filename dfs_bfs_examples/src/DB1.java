@@ -1,6 +1,8 @@
+import java.util.Arrays;
+
 public class DB1 {
     public static void main(String[] args) {
-        int[] numbers = {1, 1, 1, 1, 1, 1, 1};
+        int[] numbers = {1, 1, 1, 1, 1};
         int target = 3;
 
         System.out.println(solution(numbers, target));
@@ -12,15 +14,19 @@ public class DB1 {
     public static int solution(int[] numbers, int target) {
         int answer = 0;
         int current = numbers[0];
+        // 1부터 트리를 그려나가는 구조
         answer += dfs(current, 1, numbers, target);
+        // -1부터 트리를 그려나가는 구조
         answer += dfs(-current, 1, numbers, target);
+
         return answer;
     }
 
     public static int dfs(int prev, int index, int[] numbers, int target) {
-
+        System.out.println("prev:"+prev +", index:"+ index+", target:"+ target);
         if (index >= numbers.length) {
             if (target == prev) {
+                System.out.println("prev:"+prev);
                 return 1;
             } return 0;
         }
@@ -28,10 +34,12 @@ public class DB1 {
         int cur1 = prev + numbers[index];
         int cur2 = prev - numbers[index];
 
-        int answer = 0;
-        answer += dfs(cur1, index + 1, numbers, target);
-        answer += dfs(cur2, index + 1, numbers, target);
+        int cnt = 0;
+        // dfs
+        cnt += dfs(cur1, index + 1, numbers, target);
+        // backtracking
+        cnt += dfs(cur2, index + 1, numbers, target);
 
-        return answer;
+        return cnt;
     }
 }
