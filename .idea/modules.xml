@@ -7,13 +7,13 @@
       <module fileurl="file://$PROJECT_DIR$/coupang_examples/coupang_examples.iml" filepath="$PROJECT_DIR$/coupang_examples/coupang_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/dev_matching_examples/dev_matching_examples.iml" filepath="$PROJECT_DIR$/dev_matching_examples/dev_matching_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/dfs_bfs_examples/dfs_bfs_examples.iml" filepath="$PROJECT_DIR$/dfs_bfs_examples/dfs_bfs_examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples_lev1/examples_lev1.iml" filepath="$PROJECT_DIR$/examples_lev1/examples_lev1.iml" />
       <module fileurl="file://$PROJECT_DIR$/heap_example/heap_example.iml" filepath="$PROJECT_DIR$/heap_example/heap_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao_examples/kakao_examples.iml" filepath="$PROJECT_DIR$/kakao_examples/kakao_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/programmers_example.iml" filepath="$PROJECT_DIR$/.idea/programmers_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/search_examples/search_examples.iml" filepath="$PROJECT_DIR$/search_examples/search_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/sorting_examples/sorting_examples.iml" filepath="$PROJECT_DIR$/sorting_examples/sorting_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack_queue_examples/stack_queue_examples.iml" filepath="$PROJECT_DIR$/stack_queue_examples/stack_queue_examples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/string_examples/string_examples.iml" filepath="$PROJECT_DIR$/string_examples/string_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/sw_coding/sw_coding.iml" filepath="$PROJECT_DIR$/sw_coding/sw_coding.iml" />
     </modules>
   </component>
