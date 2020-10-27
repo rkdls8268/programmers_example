@@ -17,6 +17,7 @@ public class SkillTree {
 
         for (String s : skill_trees) {
             // 첫 번째 skill을 beforeIdx에 담아둔다
+            // indexOf 를 활용!!! 굳
             beforeIdx = s.indexOf(skill.charAt(0));
             if (beforeIdx == -1){
                 answer--;
@@ -28,6 +29,8 @@ public class SkillTree {
 //                System.out.println("before:"+beforeIdx);
                 currentIdx = s.indexOf(skill.charAt(i));
 //                System.out.println("current: "+currentIdx);
+                // 앞에 나온 스킬이 현재 스킬보다 선행스킬이 아니고 현재 스킬이 skill 에 있는 경우
+                // 혹은 앞에 나온 스킬이 skill 에 없는 스킬이고 현재 스킬이 skill 에 있는 스킬인 경우
                 if ((beforeIdx > currentIdx && currentIdx != -1) || (beforeIdx == -1 && currentIdx != -1)) {
                     answer--;
                     break;
