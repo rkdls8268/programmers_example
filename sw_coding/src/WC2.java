@@ -29,7 +29,6 @@ public class WC2 {
         }
 
         for (int i = 0; i < s.length(); i++) {
-            System.out.println(s);
             int alpha = (s.charAt(i) - (key.charAt(i) - 96));
             if (alpha < 97) alpha = alpha % 97 + 26;
             answer += (char)alpha;
