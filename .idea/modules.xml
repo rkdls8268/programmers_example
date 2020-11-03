@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/dev_matching_examples/dev_matching_examples.iml" filepath="$PROJECT_DIR$/dev_matching_examples/dev_matching_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/dfs_bfs_examples/dfs_bfs_examples.iml" filepath="$PROJECT_DIR$/dfs_bfs_examples/dfs_bfs_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples_lev1/examples_lev1.iml" filepath="$PROJECT_DIR$/examples_lev1/examples_lev1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greedy_examples/greedy_examples.iml" filepath="$PROJECT_DIR$/greedy_examples/greedy_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/heap_example/heap_example.iml" filepath="$PROJECT_DIR$/heap_example/heap_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao_examples/kakao_examples.iml" filepath="$PROJECT_DIR$/kakao_examples/kakao_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/programmers_example.iml" filepath="$PROJECT_DIR$/.idea/programmers_example.iml" />
