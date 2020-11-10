@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/greedy_examples/greedy_examples.iml" filepath="$PROJECT_DIR$/greedy_examples/greedy_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/heap_example/heap_example.iml" filepath="$PROJECT_DIR$/heap_example/heap_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao_examples/kakao_examples.iml" filepath="$PROJECT_DIR$/kakao_examples/kakao_examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kakao_exercises/kakao_exercises.iml" filepath="$PROJECT_DIR$/kakao_exercises/kakao_exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/programmers_example.iml" filepath="$PROJECT_DIR$/.idea/programmers_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/search_examples/search_examples.iml" filepath="$PROJECT_DIR$/search_examples/search_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/sorting_examples/sorting_examples.iml" filepath="$PROJECT_DIR$/sorting_examples/sorting_examples.iml" />
