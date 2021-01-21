@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/kakao_examples/kakao_examples.iml" filepath="$PROJECT_DIR$/kakao_examples/kakao_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao_exercises/kakao_exercises.iml" filepath="$PROJECT_DIR$/kakao_exercises/kakao_exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/programmers_example.iml" filepath="$PROJECT_DIR$/.idea/programmers_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samsung_examples/samsung_examples.iml" filepath="$PROJECT_DIR$/samsung_examples/samsung_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/search_examples/search_examples.iml" filepath="$PROJECT_DIR$/search_examples/search_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/sorting_examples/sorting_examples.iml" filepath="$PROJECT_DIR$/sorting_examples/sorting_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack_queue_examples/stack_queue_examples.iml" filepath="$PROJECT_DIR$/stack_queue_examples/stack_queue_examples.iml" />
