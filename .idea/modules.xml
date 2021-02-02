@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/heap_example/heap_example.iml" filepath="$PROJECT_DIR$/heap_example/heap_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao_examples/kakao_examples.iml" filepath="$PROJECT_DIR$/kakao_examples/kakao_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao_exercises/kakao_exercises.iml" filepath="$PROJECT_DIR$/kakao_exercises/kakao_exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/naver_examples/naver_examples.iml" filepath="$PROJECT_DIR$/naver_examples/naver_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/programmers_example.iml" filepath="$PROJECT_DIR$/.idea/programmers_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/samsung_examples/samsung_examples.iml" filepath="$PROJECT_DIR$/samsung_examples/samsung_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/search_examples/search_examples.iml" filepath="$PROJECT_DIR$/search_examples/search_examples.iml" />
