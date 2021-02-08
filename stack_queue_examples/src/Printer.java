@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Printer {
     public static void main(String[] args) {
@@ -20,29 +17,43 @@ public class Printer {
         */
         // 우선순위 큐 사용?
 //        Queue<Integer> queue = new LinkedList<>();
-        ArrayList<Integer> list = new ArrayList<>();
-        int len = priorities.length;
-        for (int priority : priorities) {
-//            queue.add(priorities[i]);
-            list.add(priority);
+
+        int answer = 0;
+        Queue<Print> q = new LinkedList<>();
+
+        for (int i = 0; i < priorities.length; i++) { // print큐에 인덱스번호, 우선순위 삽입
+            q.offer(new Print(i, priorities[i]));
         }
 
-        for (int i = 0; i < len; i++) {
-//            int n = queue.element(); // 첫 번째 원소 값
-            int n = list.get(i); // 원소 값
-            for (int j = i; j < len; j++) {
-                if (n < list.get(j)) {
-                    list.remove(i);
-                    list.add(n);
-                    if (n == num[1]) num[0] = len-1;
-                    else {
-                        num[0] -= 1;
-                    }
-                    break;
+        while (!q.isEmpty()) {
+
+            boolean flag = false;
+            int com = q.peek().prior;
+            for (Print p : q) {
+                if (com < p.prior) { // 맨앞의 수보다 큰 숫자가 존재하면
+                    flag = true;
+                }
+            }
+
+            if (flag) {
+                q.offer(q.poll());
+            } else {// 현재 맨앞의 숫자가 가장 클 때
+                if (q.poll().location == location) {
+                    answer = priorities.length - q.size();
                 }
             }
         }
-
-        return num[0];
+        return answer;
     }
+
+    static class Print {
+        int location;
+        int prior;
+
+        Print(int location, int prior) {
+            this.location = location;
+            this.prior = prior;
+        }
+    }
+
 }
