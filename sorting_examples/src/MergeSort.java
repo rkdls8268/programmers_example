@@ -25,7 +25,11 @@ public class MergeSort {
 
         // 둘 중 하나라도 정렬 끝나면 반복문 종료
         while (leftIndex <= mid && rightIndex <= right) {
-            if (arr[leftIndex] < arr[rightIndex]) {
+//            오름차순
+//            if (arr[leftIndex] <= arr[rightIndex]) {
+
+//            내림차순
+            if (arr[leftIndex] >= arr[rightIndex]) {
                 tmpArr[index++] = arr[leftIndex++];
             } else {
                 tmpArr[index++] = arr[rightIndex++];
