@@ -11,17 +11,11 @@ public class SecretMap2 {
     public static String[] solution(int n, int[] arr1, int[] arr2) {
         String[] answer = new String[n];
         for (int i = 0; i < n; i++) {
-            String binary1 = Integer.toBinaryString(arr1[i]);
-            String binary2 = Integer.toBinaryString(arr2[i]);
-            String str1 = String.format("%0"+ n +"d", Long.parseLong(binary1));
-            String str2 = String.format("%0"+ n +"d", Long.parseLong(binary2));
-            StringBuilder result = new StringBuilder();
-            for (int j = 0; j < n; j++) {
-                if (str1.toCharArray()[j] == '1') result.append("#");
-                if (str1.toCharArray()[j] == '0') result.append(" ");
-                if (str2.toCharArray()[j] == '1') result.replace(j, j + 1, "#");
-            }
-            answer[i] = result.toString();
+            // 비트연산 사용 시 둘 중 하나라도 1인 경우 1로 표현된다.
+            String binaryString = Integer.toBinaryString(arr1[i] | arr2[i]);
+            answer[i] = String.format("%0"+ n +"d", Long.parseLong(binaryString));
+            answer[i] = answer[i].replaceAll("1", "#");
+            answer[i] = answer[i].replaceAll("0", " ");
         }
         return answer;
     }
