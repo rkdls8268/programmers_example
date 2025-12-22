@@ -1,3 +1,5 @@
+package Hash;
+
 import java.util.HashSet;
 
 public class HashSetSolution {

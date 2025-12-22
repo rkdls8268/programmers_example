@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package Hash;
+
 import java.util.HashSet;
 
 public class HashSolution4 {

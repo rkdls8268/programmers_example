@@ -1,9 +1,11 @@
+package Hash;
+
 import java.util.HashMap;
 
 //TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 // 문자열 -> 정수 로 변환
-// 해시(Hash): 임의의 길이를 가진 데이터를 고정된 길이의 값으로 변환하는 알고리즘 또는 그
+// 해시(Hash.Hash): 임의의 길이를 가진 데이터를 고정된 길이의 값으로 변환하는 알고리즘 또는 그
 // Java에는 복잡한 해시를 직접 구현할 필요없이 쉽게 사용할 수 있도록 해주는 자료형인 HashMap, HashSet 등이 있다.
 
 // 라빈카프 알고리즘
