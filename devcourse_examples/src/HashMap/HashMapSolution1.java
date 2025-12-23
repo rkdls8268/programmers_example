@@ -19,6 +19,7 @@ public class HashMapSolution1 {
 
   public static String[] solution(String[] folder_names) {
     List<String> answerList = new ArrayList<>();
+    // 바로 String[] 을 활용할 수 있음
 
     HashMap<String, Integer> map = new HashMap<>();
     for (String folderName : folder_names) {
